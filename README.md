@@ -19,6 +19,7 @@ Modified from original zsh's [vi mode](https://github.com/robbyrussell/oh-my-zsh
     ```shell
     source ~/.zshrc
     ```
+
 ## Basic usage
 Refer to [vi mode](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode).
 
