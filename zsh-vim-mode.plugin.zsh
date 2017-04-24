@@ -18,20 +18,6 @@ bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 
-if [[ -n $HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND ]]; then
-    bindkey -M vicmd 'k' history-substring-search-up
-    bindkey -M vicmd 'j' history-substring-search-down
-
-    bindkey '^p' history-substring-search-up
-    bindkey '^n' history-substring-search-down
-else
-    bindkey -M vicmd 'k' up-history
-    bindkey -M vicmd 'j' down-history
-
-    bindkey '^p' up-history
-    bindkey '^n' down-history
-fi
-
 # if mode indicator wasn't setup by theme, define default
 if [[ "$N_MODE" == "" ]]; then
   N_MODE="%{$fg[red]%}[N]%{$reset_color%}"
